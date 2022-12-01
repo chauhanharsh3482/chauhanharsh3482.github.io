@@ -98,8 +98,8 @@
         outline: none;
         box-shadow: 0 3px 0 0 #14bcba;
         border-radius: 12px;
-        font-size: 20px;
-        font-weight: bolder;
+        font-size: 18px;
+        font-weight: 600;
         margin-top: 35px;
       }
       .bnr-inp::placeholder {
@@ -122,6 +122,19 @@
         margin-left: 50px;
         margin-top: 5%;
         float: right;
+        animation: slide-left 0.6s linear forwards;
+      }
+
+      @keyframes slide-left {
+        0% {
+          transform: translateX(50%);
+          opacity: 0;
+        }
+
+        100% {
+          transform: none;
+          opacity: 1;
+        }
       }
 
       .mb-open-acc-img {
@@ -157,6 +170,22 @@
 
       .mb-ben {
         display: none;
+      }
+
+      .mb-choose-img {
+        animation: slide-right 0.6s linear forwards;
+      }
+
+      @keyframes slide-right {
+        0% {
+          transform: translateX(-50%);
+          opacity: 0;
+        }
+
+        100% {
+          transform: none;
+          opacity: 1;
+        }
       }
 
       /* ============================================== */
@@ -234,7 +263,7 @@
       }
 
       .questions ul li {
-        margin: 0 200px 0 200px;
+        margin: 0 100px 0 100px;
         list-style: none;
         font-size: 25px;
         font-weight: bold;
@@ -246,7 +275,7 @@
         margin-right: 30px;
         font-weight: bold;
         font-size: 40px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Montserrat", sans-serif;
         float: left;
       }
 
@@ -263,9 +292,17 @@
         border-bottom: 2px solid #14bcba;
       }
 
+      .mb-card,
+      .mb-card ul li {
+        font-size: 20px;
+      }
+
       /* ============================================== */
       /*                 CUSTOMERS                      */
       /* ============================================== */
+      #customers {
+        padding-bottom: 100px;
+      }
 
       .customer-review {
         font-size: 20px;
@@ -274,6 +311,7 @@
         border-radius: 30px;
         padding: 35px;
         margin: 0 200px 0 200px;
+        max-width: 900px;
       }
 
       .customer-info {
@@ -388,12 +426,20 @@
           text-align: center;
         }
 
+        #customers {
+          padding-bottom: 50px;
+        }
+
         .desk-view {
           display: none;
         }
 
         .mb-view {
           display: block;
+        }
+
+        .mb-card {
+          font-size: 8px !important;
         }
 
         .mb-head-txt {
@@ -415,11 +461,25 @@
         }
 
         .questions ul li {
-          font-size: 10px !important;
-          margin: 0 20px 0 20px;
+          /* font-size: 10px !important; */
+          width: 90%;
+          margin: auto;
+          /* margin: 0 20px 0 20px; */
           padding-bottom: 5px;
           margin-bottom: 10px;
           text-align: left;
+        }
+
+        .qstn {
+          margin-top: 0 !important;
+        }
+
+        .qsn-li {
+          font-size: 10px !important;
+        }
+        .questions ul {
+          margin: 0 !important;
+          padding: 0 !important;
         }
 
         .questions .num {
@@ -694,23 +754,32 @@
         background: #1bb7a1;
         height: 100px;
         border-radius: 15px;
-        transform: translateY(100px);
+        transform: translateY(110px);
         z-index: 999;
         transition: all 0.3s ease-in-out;
       }
 
       .stk-txt {
-        font-size: 22px;
+        font-size: 18px;
         font-weight: 700;
-        margin-left: 60px;
+        margin-left: 10%;
+        font-weight: 600;
+      }
+
+      .fl-txt {
+        width: 30%;
+      }
+
+      .fl-con {
+        width: 70%;
       }
 
       .stk-inp {
         height: 50px;
-        width: 280px;
+        width: 38%;
         border-radius: 8px;
         box-shadow: 0 3px 0 0 #004c4b;
-        margin-right: 40px;
+        margin-left: 2%;
         outline: none;
         padding-left: 20px;
         font-family: "Montserrat", sans-serif;
@@ -721,22 +790,22 @@
       .stk-inp::placeholder {
         color: #000;
         font-family: "Montserrat", sans-serif;
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 600;
       }
 
       .stk-btn {
         height: 50px;
-        width: 180px;
+        width: 15%;
         border-radius: 8px;
         box-shadow: 0 3px 0 0 #b22c24;
         background: #ff6928;
         color: #fff;
         font-family: "Montserrat", sans-serif;
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 600;
         float: right;
-        margin-right: 60px;
+        margin-right: 2%;
       }
 
       .scroll-down .desk-acc-open {
@@ -744,14 +813,6 @@
       }
 
       .scroll-up .desk-acc-open {
-        transform: none;
-      }
-
-      .scroll-down .mb-acc-open {
-        transform: translate3d(0, 100%, 0);
-      }
-
-      .scroll-up .mb-acc-open {
         transform: none;
       }
 
@@ -812,11 +873,14 @@
         }
 
         .questions ul li {
-          font-size: 20px !important;
           margin: 0 30px 0 0px;
           padding-bottom: 5px;
           margin-bottom: 10px;
           text-align: left;
+        }
+
+        .qstn {
+          font-size: 20px !important;
         }
 
         .questions .num {
@@ -1057,7 +1121,7 @@
         }
 
         .mb-how-img {
-          width: 500px !important; 
+          width: 500px !important;
           height: auto;
           margin-left: 30px;
         }
@@ -1075,6 +1139,15 @@
 
         .collapsed {
           color: #000;
+        }
+
+        .mb-card,
+        .mb-card li {
+          font-size: 17px !important;
+        }
+
+        #customers {
+          padding-bottom: 60px;
         }
       }
     </style>
@@ -1173,12 +1246,12 @@
             Single account for all your investing and trading needs
           </h3>
         </div>
-        <div class="choose-cont">
+        <div class="choose-cont" style="display: flex; justify-content: space-between;">
           <img
             class="mb-choose-img"
             src="./images/desktop/why-choose-us.png"
             alt=""
-            style="width: 50%"
+            style="width: 45%; height: 45% !important; margin-top: auto;"
           />
           <div class="benefits" style="margin-top: 40px">
             <div class="desk-ben">
@@ -1449,7 +1522,7 @@
                 </button>
                 <div class="collapse show" id="collapseExample1">
                   <div
-                    class="card card-body"
+                    class="card card-body mb-card"
                     style="
                       color: #177574;
                       font-family: 'Montserrat', sans-serif;
@@ -1461,6 +1534,7 @@
                     <br />
                     <ul>
                       <li
+                        class="mb-card"
                         style="
                           list-style: disc;
                           font-family: 'Montserrat', sans-serif;
@@ -1470,6 +1544,7 @@
                         PAN Card
                       </li>
                       <li
+                        class="mb-card"
                         style="
                           list-style: disc;
                           font-family: 'Montserrat', sans-serif;
@@ -1479,6 +1554,7 @@
                         Address Proof (Aadhaar Card preferred)
                       </li>
                       <li
+                        class="mb-card"
                         style="
                           list-style: disc;
                           font-family: 'Montserrat', sans-serif;
@@ -1488,6 +1564,7 @@
                         Proof of Bank Details
                       </li>
                       <li
+                        class="mb-card"
                         style="
                           list-style: disc;
                           font-family: 'Montserrat', sans-serif;
@@ -1497,6 +1574,7 @@
                         Income Proof (For derivatives & currency segment
                       </li>
                       <li
+                        class="mb-card"
                         style="
                           list-style: disc;
                           font-family: 'Montserrat', sans-serif;
@@ -1537,7 +1615,7 @@
                 </button>
                 <div class="collapse" id="collapseExample2">
                   <div
-                    class="card card-body"
+                    class="card card-body mb-card"
                     style="
                       color: #177574;
                       font-family: 'Montserrat', sans-serif;
@@ -1578,7 +1656,7 @@
                 </button>
                 <div class="collapse" id="collapseExample3">
                   <div
-                    class="card card-body"
+                    class="card card-body mb-card"
                     style="
                       color: #177574;
                       font-family: 'Montserrat', sans-serif;
@@ -1618,7 +1696,7 @@
                 </button>
                 <div class="collapse" id="collapseExample4">
                   <div
-                    class="card card-body"
+                    class="card card-body mb-card"
                     style="
                       color: #177574;
                       font-family: 'Montserrat', sans-serif;
@@ -1658,7 +1736,7 @@
                 </button>
                 <div class="collapse" id="collapseExample5">
                   <div
-                    class="card card-body"
+                    class="card card-body mb-card"
                     style="
                       color: #177574;
                       font-family: 'Montserrat', sans-serif;
@@ -1698,7 +1776,7 @@
                 </button>
                 <div class="collapse" id="collapseExample6">
                   <div
-                    class="card card-body"
+                    class="card card-body mb-card"
                     style="
                       color: #177574;
                       font-family: 'Montserrat', sans-serif;
@@ -1740,7 +1818,7 @@
                 </button>
                 <div class="collapse" id="collapseExample7">
                   <div
-                    class="card card-body"
+                    class="card card-body mb-card"
                     style="
                       color: #177574;
                       font-family: 'Montserrat', sans-serif;
@@ -1780,7 +1858,7 @@
                 </button>
                 <div class="collapse" id="collapseExample8">
                   <div
-                    class="card card-body"
+                    class="card card-body mb-card"
                     style="
                       color: #177574;
                       font-family: 'Montserrat', sans-serif;
@@ -1820,7 +1898,7 @@
                 </button>
                 <div class="collapse" id="collapseExample9">
                   <div
-                    class="card card-body"
+                    class="card card-body mb-card"
                     style="
                       color: #177574;
                       font-family: 'Montserrat', sans-serif;
@@ -1861,7 +1939,7 @@
                 </button>
                 <div class="collapse" id="collapseExample10">
                   <div
-                    class="card card-body"
+                    class="card card-body mb-card"
                     style="
                       color: #177574;
                       font-family: 'Montserrat', sans-serif;
@@ -2139,30 +2217,32 @@
       </section>
 
       <div
-        class="sticky-bottom desk-acc-open"
+        class="fixed-bottom desk-acc-open"
         style="
           display: flex;
           align-items: center;
           justify-content: space-between;
           width: 96%;
           margin: auto;
+          margin-bottom: 10px;
         "
       >
-        <div style="color: #fff">
+        <div class="fl-txt" style="color: #fff">
           <span class="stk-txt">Open Free Demat Account</span>
           <br />
-          <span class="stk-txt" style="font-weight: 600; font-size: 20px"
-            >& get ₹0 AMC for Lifetime.</span
-          >
+          <span class="stk-txt">& get ₹0 AMC for Lifetime.</span>
         </div>
-        <div>
+        <div class="fl-con">
           <input class="stk-inp" placeholder="Mobile Number" />
           <input class="stk-inp" placeholder=" Email" />
           <button class="stk-btn">Get started</button>
         </div>
       </div>
 
-      <div class="sticky-bottom mb-acc-open">
+      <div
+        class="fixed-bottom mb-acc-open"
+        style="margin: auto; margin-bottom: 10px; width: 95%"
+      >
         <button class="mb-stk-btn" type="button">
           Open Free Demat Account
         </button>
