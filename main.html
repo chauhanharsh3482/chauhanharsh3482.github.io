@@ -67,6 +67,58 @@
       }
 
       /* ============================================== */
+      /*                 ANIMATION                      */
+      /* ============================================== */
+      @keyframes slide-left {
+        0% {
+          transform: translateX(50%);
+          opacity: 0;
+        }
+
+        100% {
+          transform: none;
+          opacity: 1;
+        }
+      }
+
+      @keyframes slide-right {
+        0% {
+          transform: translateX(-50%);
+          opacity: 0;
+        }
+
+        100% {
+          transform: none;
+          opacity: 1;
+        }
+      }
+
+      @keyframes slide-up {
+        0% {
+          transform: translateY(100%);
+          opacity: 0;
+        }
+
+        100% {
+          transform: none;
+          opacity: 1;
+        }
+      }
+
+      @keyframes slide-down {
+        0% {
+          transform: translateY(-100%);
+          opacity: 0;
+        }
+
+        100% {
+          transform: none;
+          opacity: 1;
+        }
+      }
+
+
+      /* ============================================== */
       /*                 OPEN_ACCOUNT                   */
       /* ============================================== */
 
@@ -77,6 +129,9 @@
         display: flex;
         justify-content: space-between;
         background: #fff8f2;
+      }
+      .logo {
+        animation: slide-down 0.6s linear forwards;
       }
 
       .open-acc {
@@ -89,6 +144,7 @@
         font-size: 25px;
         font-weight: bold;
         margin-top: 40px;
+        animation: slide-up 0.6s linear forwards;
       }
 
       .bnr-inp {
@@ -101,6 +157,7 @@
         font-size: 18px;
         font-weight: 600;
         margin-top: 35px;
+        animation: slide-up 0.6s linear forwards;
       }
       .bnr-inp::placeholder {
         color: #000;
@@ -114,6 +171,7 @@
       .l-txt {
         font-size: 20px;
         font-weight: bolder;
+        animation: slide-right 0.6s linear forwards;
       }
 
       .m-bnr-img {
@@ -125,18 +183,6 @@
         animation: slide-left 0.6s linear forwards;
       }
 
-      @keyframes slide-left {
-        0% {
-          transform: translateX(50%);
-          opacity: 0;
-        }
-
-        100% {
-          transform: none;
-          opacity: 1;
-        }
-      }
-
       .mb-open-acc-img {
         display: none;
       }
@@ -146,6 +192,7 @@
       /* ============================================== */
       .heading {
         text-align: center;
+        animation: slide-up 0.6s linear forwards;
       }
 
       .heading h1 {
@@ -166,6 +213,11 @@
         height: auto;
         margin-right: 50px;
         width: 160px;
+        animation: slide-left 0.6s linear forwards;
+      }
+
+      .mb-head-txt {
+        animation: slide-up 0.6s linear forwards;
       }
 
       .mb-ben {
@@ -174,18 +226,6 @@
 
       .mb-choose-img {
         animation: slide-right 0.6s linear forwards;
-      }
-
-      @keyframes slide-right {
-        0% {
-          transform: translateX(-50%);
-          opacity: 0;
-        }
-
-        100% {
-          transform: none;
-          opacity: 1;
-        }
       }
 
       /* ============================================== */
@@ -205,6 +245,7 @@
       .how-to li img {
         height: auto;
         width: 250px;
+        animation: slide-up 0.6s linear forwards;
       }
 
       .how-to li:first-child {
@@ -222,6 +263,7 @@
         bottom: 90px;
         left: 260px;
         right: 210px;
+        animation: slide-up 0.6s linear forwards;
       }
 
       .nums {
@@ -232,6 +274,7 @@
         right: 205px;
         justify-content: space-between;
         z-index: 2;
+        animation: slide-up 0.6s linear forwards;
       }
 
       .mb-get {
@@ -250,6 +293,7 @@
         height: 250px;
         width: auto;
         margin: 40px;
+        animation: slide-up 0.6s linear forwards;
       }
 
       /* ============================================== */
@@ -269,6 +313,7 @@
         font-weight: bold;
         padding-bottom: 10px;
         margin-bottom: 20px;
+        animation: slide-left 0.6s linear forwards;
       }
 
       .questions .num {
@@ -312,6 +357,7 @@
         padding: 35px;
         margin: 0 200px 0 200px;
         max-width: 900px;
+        animation: slide-down 0.6s linear forwards;
       }
 
       .customer-info {
@@ -321,10 +367,15 @@
         margin-top: 20px;
       }
 
+      .mb-cs-city, .mb-cs-name {
+        animation: slide-left 0.6s linear forwards;
+      }
+
       .customer-info img {
         height: 100px;
         width: auto;
         border-radius: 100px;
+        animation: slide-up 0.6s linear forwards;
       }
 
       /* ============================================== */
@@ -400,6 +451,7 @@
         color: #000;
         opacity: 1;
         background: rgba(0, 0, 0, 0.2);
+        animation: slide-right 0.6s linear forwards;
       }
       .swiper-pagination-bullet-active {
         color: #fff;
@@ -1246,12 +1298,15 @@
             Single account for all your investing and trading needs
           </h3>
         </div>
-        <div class="choose-cont" style="display: flex; justify-content: space-between;">
+        <div
+          class="choose-cont"
+          style="display: flex; justify-content: space-between"
+        >
           <img
             class="mb-choose-img"
             src="./images/desktop/why-choose-us.png"
             alt=""
-            style="width: 45%; height: 45% !important; margin-top: auto;"
+            style="width: 45%; height: 45% !important; margin-top: auto"
           />
           <div class="benefits" style="margin-top: 40px">
             <div class="desk-ben">
