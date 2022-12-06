@@ -4,54 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>New Website</title>
+    <title>SMC PAGE</title>
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-      rel="stylesheet"
-    />
-
+    <!-- Google Fonts Start -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap"
-      rel="stylesheet"
-    /> -->
-
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Google Fonts End -->
 
-    <!-- <link
-      href="https://fonts.googleapis.com/css?family=Gothic A1"
-      rel="stylesheet"
-    /> -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
+    <!-- Link Swiper's CSS End -->
 
+    <!-- Bootstrap Start -->
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
     />
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="assets/css/bootstrap.min.css"
-    />
+    <!-- Bootstrap End -->
 
     <style>
       * {
-        padding: 0;
-        margin: 0;
-        font-family: "Montserrat";
+        font-family: "Montserrat", sans-serif;
+      }
+
+      body {
+        padding-bottom: 120px;
       }
 
       button {
@@ -60,327 +46,52 @@
 
       input {
         border: none;
-      }
-
-      li {
-        list-style: none;
-      }
-
-      /* ============================================== */
-      /*                 ANIMATION                      */
-      /* ============================================== */
-      @keyframes slide-left {
-        0% {
-          transform: translateX(50%);
-          opacity: 0;
-        }
-
-        100% {
-          transform: none;
-          opacity: 1;
-        }
-      }
-
-      @keyframes slide-right {
-        0% {
-          transform: translateX(-50%);
-          opacity: 0;
-        }
-
-        100% {
-          transform: none;
-          opacity: 1;
-        }
-      }
-
-      @keyframes slide-up {
-        0% {
-          transform: translateY(100%);
-          opacity: 0;
-        }
-
-        100% {
-          transform: none;
-          opacity: 1;
-        }
-      }
-
-      @keyframes slide-down {
-        0% {
-          transform: translateY(-100%);
-          opacity: 0;
-        }
-
-        100% {
-          transform: none;
-          opacity: 1;
-        }
-      }
-
-
-      /* ============================================== */
-      /*                 OPEN_ACCOUNT                   */
-      /* ============================================== */
-
-      #open-account {
-        height: 110vh;
-        padding-bottom: 0 !important;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        background: #fff8f2;
-      }
-      .logo {
-        animation: slide-down 0.6s linear forwards;
-      }
-
-      .open-acc {
-        height: 60px;
-        width: 450px;
-        background: #ff6928;
-        color: #fff;
-        box-shadow: 0 6px 0 0 #b22c24;
-        border-radius: 12px;
-        font-size: 25px;
-        font-weight: bold;
-        margin-top: 40px;
-        animation: slide-up 0.6s linear forwards;
-      }
-
-      .bnr-inp {
-        padding-left: 20px;
-        height: 60px;
-        width: 450px;
         outline: none;
-        box-shadow: 0 3px 0 0 #14bcba;
-        border-radius: 12px;
-        font-size: 18px;
-        font-weight: 600;
-        margin-top: 35px;
-        animation: slide-up 0.6s linear forwards;
-      }
-      .bnr-inp::placeholder {
-        color: #000;
       }
 
-      .box-left {
-        margin-left: 100px;
-        width: 50%;
-      }
-
-      .l-txt {
-        font-size: 20px;
-        font-weight: bolder;
-        animation: slide-right 0.6s linear forwards;
-      }
-
-      .m-bnr-img {
-        height: auto;
-        width: 80%;
-        margin-left: 50px;
-        margin-top: 5%;
-        float: right;
-        animation: slide-left 0.6s linear forwards;
-      }
-
-      .mb-open-acc-img {
-        display: none;
-      }
-
-      /* ============================================== */
-      /*                 WHY_CHOOSE_US                  */
-      /* ============================================== */
       .heading {
-        text-align: center;
-        animation: slide-up 0.6s linear forwards;
-      }
-
-      .heading h1 {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 60px;
-      }
-
-      .choose-cont,
-      .benefits ul {
+        justify-content: center;
         display: flex;
-      }
-
-      .benefits ul li {
-        list-style: none;
-      }
-
-      .ben-img {
-        height: auto;
-        margin-right: 50px;
-        width: 160px;
-        animation: slide-left 0.6s linear forwards;
-      }
-
-      .mb-head-txt {
-        animation: slide-up 0.6s linear forwards;
-      }
-
-      .mb-ben {
-        display: none;
-      }
-
-      .mb-choose-img {
-        animation: slide-right 0.6s linear forwards;
+        font-weight: 700;
+        font-size: 45px;
+        padding-top: 100px;
       }
 
       /* ============================================== */
-      /*                 GET_STARTED                    */
+      /*                   SWIPER                       */
       /* ============================================== */
 
-      #get-started {
-        background: #fff8f2;
-      }
-
-      .how-to {
-        display: flex;
-        justify-content: space-between;
+      .swiper {
         width: 100%;
+        height: 100%;
       }
 
-      .how-to li img {
-        height: auto;
-        width: 250px;
-        animation: slide-up 0.6s linear forwards;
-      }
-
-      .how-to li:first-child {
-        margin-left: 10%;
-      }
-
-      .how-to li:last-child {
-        margin-right: 90px;
-      }
-
-      .line {
-        height: 5px;
-        background: #14bcba;
-        position: absolute;
-        bottom: 90px;
-        left: 260px;
-        right: 210px;
-        animation: slide-up 0.6s linear forwards;
-      }
-
-      .nums {
-        position: absolute;
-        display: flex;
-        bottom: 75px;
-        left: 255px;
-        right: 205px;
-        justify-content: space-between;
-        z-index: 2;
-        animation: slide-up 0.6s linear forwards;
-      }
-
-      .mb-get {
-        display: none;
-      }
-
-      /* ============================================== */
-      /*                    AWARDS                      */
-      /* ============================================== */
-
-      #awards {
-        background: #fff8f2;
-      }
-
-      .award-img {
-        height: 250px;
-        width: auto;
-        margin: 40px;
-        animation: slide-up 0.6s linear forwards;
-      }
-
-      /* ============================================== */
-      /*                 QUESTIONS                      */
-      /* ============================================== */
-
-      .questions ul {
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        height: 500px;
         display: flex;
         flex-direction: column;
-        width: 100%;
-      }
 
-      .questions ul li {
-        margin: 0 100px 0 100px;
-        list-style: none;
-        font-size: 25px;
-        font-weight: bold;
-        padding-bottom: 10px;
-        margin-bottom: 20px;
-        animation: slide-left 0.6s linear forwards;
-      }
-
-      .questions .num {
-        margin-right: 30px;
-        font-weight: bold;
-        font-size: 40px;
-        font-family: "Montserrat", sans-serif;
-        float: left;
-      }
-
-      .questions .plus-icon {
-        margin-top: 10px;
-      }
-
-      .questions .num,
-      .questions .plus-icon {
-        color: #22b1af;
-      }
-
-      .qsn-li {
-        border-bottom: 2px solid #14bcba;
-      }
-
-      .mb-card,
-      .mb-card ul li {
-        font-size: 20px;
-      }
-
-      /* ============================================== */
-      /*                 CUSTOMERS                      */
-      /* ============================================== */
-      #customers {
-        padding-bottom: 100px;
-      }
-
-      .customer-review {
-        font-size: 20px;
-        font-weight: 600;
-        border: 4px solid #000;
-        border-radius: 30px;
-        padding: 35px;
-        margin: 0 200px 0 200px;
-        max-width: 900px;
-        animation: slide-down 0.6s linear forwards;
-      }
-
-      .customer-info {
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
         display: flex;
-        text-align: left !important;
-        margin-left: 200px;
-        margin-top: 20px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
       }
 
-      .mb-cs-city, .mb-cs-name {
-        animation: slide-left 0.6s linear forwards;
+      .swiper {
+        margin-left: auto;
+        margin-right: auto;
       }
-
-      .customer-info img {
-        height: 100px;
-        width: auto;
-        border-radius: 100px;
-        animation: slide-up 0.6s linear forwards;
-      }
-
-      /* ============================================== */
-      /*                    SWIPER                      */
-      /* ============================================== */
 
       .swiper-button-next {
         background-image: url(./images/nxt-btn.png);
@@ -389,8 +100,8 @@
         background-position: center;
         height: 100px;
         width: 100px;
-        top: 40% !important;
-        /* margin-right: 30px; */
+        top: 50%;
+        margin-right: 20px;
       }
 
       .swiper-button-next::after {
@@ -404,39 +115,12 @@
         background-position: center;
         height: 100px;
         width: 100px;
-        top: 40% !important;
-        /* margin-left: 30px; */
+        top: 50%;
+        margin-left: 20px;
       }
 
       .swiper-button-prev::after {
         display: none;
-      }
-
-      .swiper {
-        width: 100%;
-        height: 100%;
-      }
-
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        display: flex;
-        flex-direction: column;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-        padding-bottom: 80px;
-      }
-
-      .swiper {
-        margin-left: auto;
-        margin-right: auto;
       }
 
       .swiper-pagination-bullet {
@@ -451,355 +135,315 @@
         color: #000;
         opacity: 1;
         background: rgba(0, 0, 0, 0.2);
-        animation: slide-right 0.6s linear forwards;
+        /* animation: slide-right 0.6s linear forwards; */
       }
+
       .swiper-pagination-bullet-active {
         color: #fff;
         background: #22b1af;
       }
 
-      .swiper-pagination {
-        bottom: 30px !important;
+      /* ============================================== */
+      /*                 OPEN_ACCOUNT                   */
+      /* ============================================== */
+      #open-account {
+        display: flex;
+        padding-bottom: 75px;
+        background: #fff8f2;
+      }
+
+      .box-left {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 50px;
+      }
+
+      .boxleft-innr {
+        margin-left: 10%;
+      }
+
+      .logo {
+        height: auto;
+        width: 150px;
+      }
+
+      .main-txt {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .inp-box {
+        padding-left: 20px;
+        height: 60px;
+        width: 65%;
+        outline: none;
+        box-shadow: 0 3px 0 0 #14bcba;
+        border-radius: 12px;
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 35px;
+      }
+
+      .inp-box::placeholder {
+        color: #000;
+      }
+
+      .open-btn {
+        height: 60px;
+        width: 65%;
+        background: #ff6928;
+        color: #fff;
+        box-shadow: 0 6px 0 0 #b22c24;
+        border-radius: 12px;
+        font-size: 22px;
+        font-weight: bold;
+        margin-top: 40px;
+      }
+
+      .box-right {
+        width: 45%;
+        margin-top: 0px !important;
+        display: flex;
+        align-items: flex-end;
+      }
+
+      .box-right img {
+        width: 100%;
       }
 
       /* ============================================== */
-      /*                 MOBILE_VIEW                    */
+      /*                 WHY_CHOOSE_US                  */
       /* ============================================== */
-      .mb-view {
-        display: none;
+      /* #why-chooseus {
+        background: #315565;
+      } */
+
+      .choose-cont {
+        display: flex;
+      }
+
+      .why-choose-img {
+        width: 40%;
+        display: flex;
+        align-items: flex-end;
+      }
+
+      .why-choose-img img {
+        width: 100%;
+        height: auto;
+      }
+
+      .ben-img {
+        width: 90%;
+        height: auto;
+      }
+
+      .benefits {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .benefits ul {
+        display: flex;
+      }
+
+      .benefits ul li {
+        list-style: none;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 150px;
+        margin: 20px;
+      }
+
+      .benefits ul li span {
+        font-size: 20px;
+        font-weight: 600;
       }
 
       /* ============================================== */
-      /*                 MEDIA_QUERIES                  */
+      /*                  GET_STARTED                   */
+      /* ============================================== */
+      #get-started {
+        background: #fff8f2;
+        padding-bottom: 100px;
+      }
+      
+      .desk-get {
+        position: relative;
+      }
+
+      .desk-get ul {
+        display: flex;
+        margin: 0 !important;
+        margin-left: 100px !important;
+        margin-right: 100px !important;
+        padding: 0;
+      }
+
+      .desk-get ul li {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
+
+      .desk-get ul li img {
+        width: 75%;
+      }
+
+      .get-num {
+        position: relative;
+        height: 45px;
+        width: 45px !important;
+        margin-top: 50px;
+        z-index: 2;
+      }
+
+      .line {
+        position: absolute;
+        bottom: 20px;
+        left: 9%;
+        right: 9%;
+        border-bottom: 3px solid #14bcba;
+        margin-left: 100px;
+        margin-right: 100px;
+
+      }
+      /* ============================================== */
+      /*               ASKED_QUESTIONS                  */
+      /* ============================================== */
+      #asked-questions {
+        padding-bottom: 100px;
+      }
+
+      .accordion {
+        --bs-accordion-btn-focus-border-color: none !important;
+        --bs-accordion-btn-focus-box-shadow: none !important;
+        --bs-accordion-active-color: none !important;
+        --bs-accordion-active-bg: none !important;
+      }
+
+      .accordion-button:not(.collapsed) {
+        color: var(--bs-accordion-active-color);
+        background-color: none;
+      }
+
+      .accordion-button:not(.collapsed)::after {
+        background-image: url(images/plus.png);
+        transform: var(--bs-accordion-btn-icon-transform);
+        height: 45px !important;
+        width: 45px !important;
+      }
+
+      .accordion-button::after {
+        flex-shrink: 0;
+        width: 45px !important;
+        height: 45px !important;
+        margin-left: auto;
+        content: "";
+        background-image: url(images/minus.png);
+        background-repeat: no-repeat;
+        background-size: 45px !important;
+        transition: var(--bs-accordion-btn-icon-transition);
+      }
+
+      .accordion-item,
+      .accordion-flush .accordion-item:last-child {
+        border-bottom: 2px solid #22b1af !important;
+        width: 90% !important;
+        margin: auto;
+      }
+
+      .accordion-body {
+        border: 1px solid rgba(32, 33, 33, 0.3);
+        border-radius: 5px;
+        margin-bottom: 5px;
+        color: #177574;
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      .accordion-button {
+        font-size: 26px;
+        font-weight: 600;
+      }
+
+      .num {
+        font-size: 40px;
+        font-weight: 700;
+        margin-right: 20px;
+        color: #22b1af;
+      }
+
+      /* ============================================== */
+      /*                   AWARDS                       */
+      /* ============================================== */
+      #awards {
+        background: #fff8f2;
+        padding-bottom: 80px;
+      }
+
+      .award-img {
+        height: 250px;
+        width: auto;
+        margin: 40px;
+        animation: slide-up 0.6s linear forwards;
+      }
+
+      /* ============================================== */
+      /*                  CUSTOMERS                     */
       /* ============================================== */
 
-      @media only screen and (max-width: 490px) {
-        body {
-          text-align: center;
-        }
-
-        #customers {
-          padding-bottom: 50px;
-        }
-
-        .desk-view {
-          display: none;
-        }
-
-        .mb-view {
-          display: block;
-        }
-
-        .mb-card {
-          font-size: 8px !important;
-        }
-
-        .mb-head-txt {
-          font-size: 25px !important;
-          margin-top: 30px !important;
-          margin-left: 80px;
-          margin-right: 80px;
-        }
-
-        .mb-question {
-          padding-bottom: 30px !important;
-        }
-
-        .mb-qs-head {
-          font-size: 20px !important;
-          margin-left: 20px;
-          margin-right: 20px;
-          padding-bottom: 20px !important;
-        }
-
-        .questions ul li {
-          /* font-size: 10px !important; */
-          width: 90%;
-          margin: auto;
-          /* margin: 0 20px 0 20px; */
-          padding-bottom: 5px;
-          margin-bottom: 10px;
-          text-align: left;
-        }
-
-        .qstn {
-          margin-top: 0 !important;
-        }
-
-        .qsn-li {
-          font-size: 10px !important;
-        }
-        .questions ul {
-          margin: 0 !important;
-          padding: 0 !important;
-        }
-
-        .questions .num {
-          margin-right: 5px;
-          font-weight: bold;
-          font-size: 12px;
-          font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .questions .plus-icon i {
-          font-size: 10px !important;
-        }
-
-        .questions .plus-icon {
-          margin-top: 0px;
-        }
-
-        .award-img {
-          height: 120px;
-          width: auto;
-          margin: 12px;
-        }
-
-        .mb-award {
-          padding-bottom: 20px !important;
-        }
-
-        .mb-head-awrd {
-          padding-bottom: 10px !important;
-        }
-
-        .swiper-slide {
-          padding-bottom: 25px !important;
-        }
-
-        .swiper-button-next {
-          background-image: url(./images/nxt-btn.png);
-          height: 40px;
-          width: 40px;
-          top: 45% !important;
-        }
-
-        .swiper-button-prev {
-          background-image: url(./images/prev-btn.png);
-          height: 40px;
-          width: 40px;
-          top: 45% !important;
-        }
-
-        .customer-review {
-          font-size: 12px;
-          padding: 15px;
-          margin: 0 60px 0 60px;
-          border: 2px solid #000;
-          border-radius: 10px;
-        }
-
-        .customer-info {
-          margin-top: 10px;
-        }
-
-        .customer-info {
-          margin-left: 60px;
-          margin-top: 20px;
-        }
-        .customer-info span {
-          font-size: 20px;
-          margin: 0px !important;
-        }
-
-        .customer-info img {
-          height: 40px;
-          width: auto;
-          border-radius: 40px;
-        }
-
-        .mb-cs-info {
-          margin-left: 8px !important;
-          margin-top: 5px !important;
-        }
-
-        .mb-cs-name {
-          font-size: 15px !important;
-        }
-
-        .mb-cs-city {
-          font-size: 10px !important;
-        }
-
-        .mb-custmr {
-          margin-top: 20px;
-          padding-bottom: 20px !important;
-          margin-left: 20px !important;
-          margin-right: 20px !important;
-        }
-
-        .swiper-pagination-bullet {
-          width: 27px;
-          height: 1px;
-          margin: 4px !important;
-        }
-
-        .swiper-pagination {
-          bottom: 20px !important;
-        }
-
-        #open-account {
-          height: auto;
-        }
-
-        .box-left {
-          margin-left: 0 !important;
-          margin-right: 0 !important;
-          width: 100% !important;
-        }
-
-        .box-right {
-          display: none;
-        }
-
-        .mb-open-acc-img {
-          display: block;
-          width: 74%;
-          margin-left: 13%;
-          height: auto;
-          margin-bottom: 0 !important;
-        }
-
-        .mb-open {
-          margin-left: 0 !important;
-          margin-right: 0 !important;
-        }
-
-        .open-acc {
-          height: 35px;
-          width: 245px;
-          box-shadow: 0 3px 0 0 #b22c24;
-          border-radius: 5px;
-          font-size: 14px;
-          margin-top: 30px;
-          margin-bottom: 40px !important;
-        }
-
-        .bnr-inp {
-          padding-left: 10px;
-          padding-right: 10px;
-          height: 35px;
-          width: 225px;
-          box-shadow: 0 2px 0 0 #14bcba;
-          border-radius: 5px;
-          font-size: 12px;
-          margin-top: 15px;
-        }
-
-        .l-txt h1 {
-          font-weight: bolder;
-          font-size: 30px !important;
-        }
-
-        .l-txt h3 {
-          font-weight: bolder;
-          font-size: 15px !important;
-          margin-top: 10px !important;
-        }
-
-        .logo {
-          height: 40px;
-          width: auto;
-          margin-bottom: 0 !important;
-        }
-
-        .mb-choose-img {
-          display: none;
-        }
-
-        .desk-ben {
-          display: none;
-        }
-
-        .mb-ben {
-          display: block;
-        }
-
-        .mb-head-txt {
-          margin-bottom: 5px !important;
-        }
-
-        .heading h3 {
-          margin-bottom: 20px !important;
-          font-size: 12px !important;
-        }
-
-        .ben-img {
-          height: 100px;
-          width: auto;
-          margin-right: 0 !important;
-          margin-bottom: 30px !important;
-        }
-
-        .benefits {
-          width: 100%;
-          display: flex;
-          justify-content: center;
-        }
-
-        .mb-get {
-          display: block;
-          padding-bottom: 30px !important;
-        }
-
-        .desk-get {
-          display: none;
-        }
-
-        .howto {
-          display: flex;
-          flex-direction: column;
-          position: relative;
-        }
-
-        .mb-nums {
-          position: absolute;
-          top: 50px;
-          bottom: 0;
-          left: 40px;
-          display: flex;
-          flex-direction: column;
-          height: 450px;
-          height: 100%;
-          width: 20px;
-        }
-
-        .mb-nums-img {
-          height: 20px !important;
-          width: auto;
-          z-index: 2;
-        }
-
-        .mb-how-img {
-          width: 270px;
-          height: auto;
-          margin-left: 30px;
-        }
-
-        .mb-line {
-          width: 2px;
-          height: 330px;
-          background: #22b1af;
-          position: absolute;
-          top: 55px;
-          bottom: 0;
-          left: 50px;
-          z-index: 1;
-        }
-
-        .collapsed {
-          color: #000;
-        }
-
-        .desk-acc-open {
-          display: none !important;
-        }
-
-        .mb-acc-open {
-          display: block !important;
-          width: 100%;
-        }
+      .custmr-review {
+        border: 4px solid #000;
+        border-radius: 30px;
+        padding: 35px;
+        max-width: 900px;
+        font-weight: 600 !important;
       }
+
+      .custmr-review p {
+        /* font-weight: normal; */
+        font-size: 20px;
+        margin: 0;
+      }
+
+      .custmr-info {
+        /* background: #228545; */
+        display: flex;
+        text-align: left;
+        align-items: center;
+        margin-top: 15px;
+      }
+
+      .custmr-name {
+        font-size: 35px;
+        font-weight: 700;
+      }
+
+      .custmr-city {
+        font-size: 25px;
+        font-weight: 600;
+      }
+
+      .custmr-img {
+        margin-right: 25px;
+      }
+
+      .custmr-img img {
+        height: 100px !important;
+        width: auto !important;
+        border-radius: 50px;
+      }
+
+      /* ============================================== */
+      /*                  CUSTOMERS                     */
+      /* ============================================== */
 
       .desk-acc-open {
         width: 100%;
@@ -883,1180 +527,452 @@
         font-size: 18px;
         font-weight: 600;
       }
-
-      @media only screen and (min-width: 491px) and (max-width: 980px) {
-        .desk-acc-open {
-          display: none !important;
-        }
-
-        .mb-acc-open {
-          display: block !important;
-          width: 100%;
-        }
-
-        body {
-          text-align: center;
-        }
-
-        .desk-view {
-          display: none;
-        }
-
-        .mb-view {
-          display: block;
-        }
-
-        .mb-head-txt {
-          font-size: 30px !important;
-          margin-top: 30px !important;
-          margin-left: 80px;
-          margin-right: 80px;
-        }
-
-        .mb-question {
-          padding-bottom: 30px !important;
-        }
-
-        .mb-qs-head {
-          font-size: 30px !important;
-          margin-left: 20px;
-          margin-right: 20px;
-          padding-bottom: 20px !important;
-        }
-
-        .questions ul li {
-          margin: 0 30px 0 0px;
-          padding-bottom: 5px;
-          margin-bottom: 10px;
-          text-align: left;
-        }
-
-        .qstn {
-          font-size: 20px !important;
-        }
-
-        .questions .num {
-          margin-right: 10px;
-          font-weight: bold;
-          font-size: 25px;
-          font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .qstn {
-          margin-top: 4px !important;
-        }
-
-        .questions .plus-icon i {
-          font-size: 20px !important;
-        }
-
-        .questions .plus-icon {
-          margin-top: 0px;
-        }
-
-        .award-img {
-          height: 200px;
-          width: auto;
-          margin: 12px;
-        }
-
-        .mb-award {
-          padding-bottom: 20px !important;
-        }
-
-        .mb-head-awrd {
-          padding-bottom: 10px !important;
-        }
-
-        .swiper-slide {
-          padding-bottom: 25px !important;
-        }
-
-        .swiper-button-next {
-          background-image: url(./images/nxt-btn.png);
-          height: 60px;
-          width: 60px;
-          top: 45% !important;
-        }
-
-        .swiper-button-prev {
-          background-image: url(./images/prev-btn.png);
-          height: 60px;
-          width: 60px;
-          top: 45% !important;
-        }
-
-        .customer-review {
-          font-size: 20px;
-          padding: 15px;
-          margin: 0 100px 0 100px;
-          border: 2px solid #000;
-          border-radius: 10px;
-        }
-
-        .customer-info {
-          margin-left: 100px;
-          margin-top: 30px !important;
-        }
-        .customer-info span {
-          margin: 0px !important;
-        }
-
-        .customer-info img {
-          height: 60px;
-          width: auto;
-          border-radius: 40px;
-        }
-
-        .mb-cs-info {
-          margin-left: 8px !important;
-          margin-top: 8px !important;
-        }
-
-        .mb-cs-name {
-          font-size: 18px !important;
-        }
-
-        .mb-cs-city {
-          font-size: 12px !important;
-        }
-
-        .mb-custmr {
-          margin-top: 20px;
-          padding-bottom: 20px !important;
-          margin-left: 20px !important;
-          margin-right: 20px !important;
-        }
-
-        .swiper-pagination-bullet {
-          width: 40px;
-          height: 3px;
-          margin: 6px !important;
-        }
-
-        .swiper-pagination {
-          bottom: 5px !important;
-        }
-
-        #open-account {
-          height: auto;
-        }
-
-        .box-left {
-          margin-left: 0 !important;
-          margin-right: 0 !important;
-          width: 100% !important;
-        }
-
-        .box-right {
-          display: none;
-        }
-
-        .mb-open-acc-img {
-          display: block;
-          width: 60%;
-          margin-left: 20%;
-          height: auto;
-          margin-bottom: 0 !important;
-        }
-
-        .mb-open {
-          margin-left: 0 !important;
-          margin-right: 0 !important;
-        }
-
-        .open-acc {
-          height: 45px;
-          width: 400px;
-          box-shadow: 0 3px 0 0 #b22c24;
-          border-radius: 5px;
-          font-size: 20px;
-          margin-top: 30px;
-          margin-bottom: 40px !important;
-        }
-
-        .bnr-inp {
-          padding-left: 10px;
-          padding-right: 10px;
-          height: 45px;
-          width: 300px;
-          box-shadow: 0 2px 0 0 #14bcba;
-          border-radius: 5px;
-          font-size: 20px;
-          margin: 15px;
-        }
-
-        .l-txt h1 {
-          font-weight: bolder;
-          font-size: 40px !important;
-        }
-
-        .l-txt h3 {
-          font-weight: bolder;
-          font-size: 30px !important;
-          margin-top: 10px !important;
-        }
-
-        .logo {
-          height: 80px;
-          width: auto;
-          margin-bottom: 0 !important;
-        }
-
-        .mb-choose-img {
-          display: none;
-        }
-
-        .desk-ben {
-          display: none;
-        }
-
-        .mb-ben {
-          display: block;
-        }
-
-        .mb-head-txt {
-          margin-bottom: 5px !important;
-        }
-
-        .heading h3 {
-          margin-bottom: 20px !important;
-          font-size: 20px !important;
-        }
-
-        .ben-img {
-          height: 200px;
-          width: auto;
-          margin-right: 0 !important;
-          margin-bottom: 30px !important;
-        }
-
-        .benefits {
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          padding-bottom: 30px;
-        }
-
-        .mb-get {
-          display: block;
-          padding-bottom: 30px !important;
-        }
-
-        .desk-get {
-          display: none;
-        }
-
-        .howto {
-          display: flex;
-          flex-direction: column;
-          position: relative;
-        }
-
-        .mb-nums {
-          position: absolute;
-          top: 75px;
-          bottom: 0;
-          left: 80px;
-          display: flex;
-          flex-direction: column;
-          height: 450px;
-          height: 100%;
-          width: 20px;
-        }
-
-        .mb-nums-img {
-          height: 50px !important;
-          width: 50px;
-          z-index: 2;
-          margin-bottom: 140px !important;
-        }
-
-        .mb-how-img {
-          width: 500px !important;
-          height: auto;
-          margin-left: 30px;
-        }
-
-        .mb-line {
-          width: 4px;
-          height: 600px;
-          background: #22b1af;
-          position: absolute;
-          top: 80px;
-          bottom: 0;
-          left: 105px;
-          z-index: 1;
-        }
-
-        .collapsed {
-          color: #000;
-        }
-
-        .mb-card,
-        .mb-card li {
-          font-size: 17px !important;
-        }
-
-        #customers {
-          padding-bottom: 60px;
-        }
-      }
     </style>
   </head>
-
-  <body style="position: relative">
+  <body>
     <div>
       <section id="open-account">
-        <div class="box-left" style="margin-top: 30px">
-          <img
-            class="logo"
-            src="./images/logo.png"
-            alt=""
-            height="80px"
-            style="margin-bottom: 30px"
-          />
-          <div class="l-txt">
-            <h1
-              class="mb-head-txt mb-open"
-              style="
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 800;
-                font-size: 50px;
-              "
-            >
-              Open Free
-            </h1>
-            <h1
-              style="
-                color: #14bcba;
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 800;
-                font-size: 50px;
-              "
-            >
-              Demat Account
-            </h1>
-            <h3
-              style="
-                font-size: 30px;
-                margin-top: 20px;
-                font-family: 'Montserrat', sans-serif;
-                font-weight: 600;
-              "
-            >
-              & get ₹0 AMC for lifetime.
-            </h3>
-          </div>
-          <img
-            class="mb-open-acc-img"
-            src="./images/m-bnr.png"
-            alt=""
-            height="100px"
-            style="margin-bottom: 80px"
-          />
-          <div>
-            <input class="bnr-inp" placeholder="Enter your Mobile Number" />
-            <input class="bnr-inp" placeholder="Email ID" />
-            <button type="button" class="open-acc">
-              <!--Change type according to need-->
+        <div class="box-left">
+          <div class="boxleft-innr">
+            <img class="logo" src="./images/logo.png" alt="" />
+            <div class="main-txt">
+              <span style="color: #000; font-weight: 800; font-size: 50px"
+                >Open Free</span
+              >
+              <span style="color: #14bcba; font-weight: 800; font-size: 50px"
+                >Demat Account</span
+              >
+              <span style="font-size: 30px; font-weight: 600; color: #000"
+                >& get ₹0 AMC for lifetime.</span
+              >
+            </div>
+            <input
+              class="inp-box"
+              type="tel"
+              placeholder="Enter your Mobile Number"
+              required
+            />
+            <input
+              class="inp-box"
+              type="email"
+              placeholder="Email ID"
+              required
+            />
+            <!-- pattern="[0-9]{10}"  //  pattern="+[0-9]{2}-[0-9]{10}" -->
+            <button class="open-btn" type="submit">
               Open an A/c (for
               <span style="text-decoration: line-through">Rs. 599</span> Free)
             </button>
           </div>
         </div>
-        <div class="box-right" style="margin-top: 30px">
-          <img class="m-bnr-img" src="./images/m-bnr.png" alt="" />
-        </div>
 
-        <!-- <div class="box-right"></div> -->
-        <!-- <button type="button" class="mm"> click me </button> -->
+        <div class="box-right">
+          <img src="./images/main-img.png" alt="" />
+        </div>
       </section>
+
       <section id="why-chooseus">
-        <div class="heading">
-          <h1
-            class="mb-head-txt"
-            style="
-              margin-top: 50px;
-              margin-bottom: 20px;
-              font-family: 'Montserrat', sans-serif;
-              font-size: 45px;
-              font-weight: 800;
-            "
-          >
-            Why Choose Us?
-          </h1>
-          <h3
-            style="
-              font-size: 40px;
-              margin-bottom: 100px;
-              font-family: 'Montserrat', sans-serif;
-              font-size: 30px;
-              font-weight: 600;
-            "
-          >
+        <div
+          class="heading"
+          style="
+            margin-bottom: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          "
+        >
+          <span style="margin-bottom: 10px">Why Choose Us?</span>
+          <h3 style="font-weight: 600">
             Single account for all your investing and trading needs
           </h3>
         </div>
-        <div
-          class="choose-cont"
-          style="display: flex; justify-content: space-between"
-        >
-          <img
-            class="mb-choose-img"
-            src="./images/desktop/why-choose-us.png"
-            alt=""
-            style="width: 45%; height: 45% !important; margin-top: auto"
-          />
-          <div class="benefits" style="margin-top: 40px">
-            <div class="desk-ben">
-              <ul style="margin-bottom: 40px">
-                <li>
-                  <img
-                    class="ben-img"
-                    src="./images/ben1.png"
-                    alt=""
-                    style="margin-right: 25px !important"
-                  />
-                </li>
-                <li>
-                  <img
-                    class="ben-img"
-                    src="./images/ben2.png"
-                    alt=""
-                    style="
-                      width: 200px !important;
-                      margin-right: 35px !important;
-                    "
-                  />
-                </li>
-                <li>
-                  <img
-                    class="ben-img"
-                    src="./images/ben3.png"
-                    alt=""
-                    style="width: 150px !important"
-                  />
-                </li>
-              </ul>
-              <ul>
-                <li><img class="ben-img" src="./images/ben4.png" alt="" /></li>
-                <li>
-                  <img class="ben-img" src="./images/ben5.png" alt="" />
-                </li>
-                <li>
-                  <img
-                    class="ben-img"
-                    src="./images/ben6.png"
-                    alt=""
-                    style="margin-top: 8px"
-                  />
-                </li>
-              </ul>
-            </div>
-
-            <div class="mb-ben">
-              <div style="width: 100%">
-                <img
-                  class="ben-img"
-                  src="./images/ben1.png"
-                  alt=""
-                  style="padding-right: 6px"
-                />
-                <img
-                  class="ben-img"
-                  src="./images/ben2.png"
-                  alt=""
-                  style="margin-left: 20px"
-                />
-                <br class="mb-view" />
-                <img
-                  class="ben-img"
-                  src="./images/ben3.png"
-                  alt=""
-                  style="padding-right: 50px"
-                />
-                <img class="ben-img" src="./images/ben4.png" alt="" />
-                <br class="mb-view" />
-                <img
-                  class="ben-img"
-                  src="./images/ben5.png"
-                  alt=""
-                  style="padding-right: 50px; margin-bottom: 0 !important"
-                />
-                <img
-                  class="ben-img"
-                  src="./images/ben6.png"
-                  alt=""
-                  style="margin-bottom: 0 !important"
-                />
-              </div>
-            </div>
+        <div class="choose-cont">
+          <div class="why-choose-img" style="width: 45%">
+            <img src="images/only for desktop use/why-us.png" alt="" />
           </div>
-        </div>
-      </section>
-      <section id="get-started">
-        <div class="heading">
-          <h1
-            class="mb-head-txt"
-            style="
-              padding-top: 60px;
-              font-family: 'Montserrat', sans-serif;
-              font-size: 45px;
-              font-weight: bold;
-            "
-          >
-            How to get Started?
-          </h1>
-          <h3
-            style="
-              font-size: 30px;
-              margin-bottom: 30px;
-              margin-top: 10px;
-              font-family: 'Montserrat', sans-serif;
-              font-weight: 600;
-            "
-          >
-            Open Account in 4 easy & simple steps
-          </h3>
-        </div>
-        <div class="desk-get" style="position: relative; padding-bottom: 120px">
-          <ul class="how-to">
-            <li>
-              <img src="./images/desktop/how-to1.png" alt="" />
-            </li>
-            <li>
-              <img
-                src="./images/desktop/how-to2.png"
-                alt=""
-                style="margin-top: 10px !important"
-              />
-            </li>
-            <li>
-              <img src="./images/desktop/how-to3.png" alt="" />
-            </li>
-            <li>
-              <img
-                src="./images/desktop/how-to4.png"
-                alt=""
-                style="margin-top: -10px !important"
-              />
-            </li>
-          </ul>
-          <div class="nums">
-            <img
-              src="./images/1.png"
-              alt=""
-              style="height: 40px; width: auto"
-            />
-            <img
-              src="./images/2.png"
-              alt=""
-              style="height: 40px; width: auto"
-            />
-            <img
-              src="./images/3.png"
-              alt=""
-              style="height: 40px; width: auto"
-            />
-            <img
-              src="./images/4.png"
-              alt=""
-              style="height: 40px; width: auto"
-            />
-          </div>
-          <div class="line"></div>
-        </div>
-        <div class="mb-get" style="position: relative; padding-bottom: 60px">
-          <div class="howto">
-            <div>
-              <!-- <img class="mb-nums" src="./images/1.png" alt="" /> -->
-              <img
-                class="mb-how-img"
-                src="./images/mobile/howto-1.png"
-                alt=""
-              />
-            </div>
-            <div>
-              <!-- <img class="mb-nums" src="./images/2.png" alt="" /> -->
-              <img
-                class="mb-how-img"
-                src="./images/mobile/howto-2.png"
-                alt=""
-              />
-            </div>
-            <div>
-              <!-- <img class="mb-nums" src="./images/3.png" alt="" /> -->
-              <img
-                class="mb-how-img"
-                src="./images/mobile/howto-3.png"
-                alt=""
-              />
-            </div>
-            <div>
-              <!-- <img class="mb-nums" src="./images/4.png" alt="" /> -->
-              <img
-                class="mb-how-img"
-                src="./images/mobile/howto-4.png"
-                alt=""
-              />
-            </div>
-            <div class="mb-nums">
-              <img
-                class="mb-nums-img"
-                src="./images/1.png"
-                alt=""
-                style="margin-bottom: 80px"
-              />
-              <img
-                class="mb-nums-img"
-                src="./images/2.png"
-                alt=""
-                style="margin-bottom: 85px"
-              />
-              <img
-                class="mb-nums-img"
-                src="./images/3.png"
-                alt=""
-                style="margin-bottom: 95px"
-              />
-              <img class="mb-nums-img" src="./images/4.png" alt="" />
-            </div>
-            <div class="mb-line"></div>
-          </div>
-        </div>
-      </section>
-      <section id="asked-questions">
-        <div class="mb-question" style="padding-bottom: 80px">
-          <div style="justify-content: center; display: flex">
-            <span
-              class="mb-head-txt mb-qs-head"
-              style="
-                font-size: 45px;
-                font-weight: bold;
-                margin-top: 100px;
-                margin-bottom: 100px;
-                font-family: 'Montserrat', sans-serif;
-              "
-              >Frequently Asked Questions</span
-            >
-          </div>
-          <div class="questions">
+          <div class="benefits">
             <ul>
-              <li class="qsn-li">
-                <button
-                  style="
-                    width: 100%;
-                    background-color: #fff;
-                    font-family: 'Montserrat', sans-serif;
-                    font-weight: 600;
-                  "
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseExample1"
-                  aria-expanded="false"
-                  aria-controls="collapseExample1"
+              <li>
+                <img class="ben-img" src="images/ICONS/ben1.png" alt="" /><span
+                  >Free A/C opening</span
                 >
-                  <span class="num">01</span>
-                  <span class="qstn" style="float: left; margin-top: 10px"
-                    >What are the documents required to open a Demat
-                    Account?</span
-                  >
-                  <div
-                    id="click_advance"
-                    class="plus-icon"
-                    style="float: right"
-                  >
-                    <i
-                      onclick="myFunction(this)"
-                      class="fa fa-minus"
-                      style="font-size: 40px"
-                    ></i>
-                    <!-- <i class="fa fa-minus" style="font-size: 40px"></i> -->
-                  </div>
-                </button>
-                <div class="collapse show" id="collapseExample1">
-                  <div
-                    class="card card-body mb-card"
-                    style="
-                      color: #177574;
-                      font-family: 'Montserrat', sans-serif;
-                      font-weight: 600;
-                    "
-                  >
-                    For Individuals, documents required include:
-                    <br />
-                    <br />
-                    <ul>
-                      <li
-                        class="mb-card"
-                        style="
-                          list-style: disc;
-                          font-family: 'Montserrat', sans-serif;
-                          font-weight: 600;
-                        "
-                      >
-                        PAN Card
-                      </li>
-                      <li
-                        class="mb-card"
-                        style="
-                          list-style: disc;
-                          font-family: 'Montserrat', sans-serif;
-                          font-weight: 600;
-                        "
-                      >
-                        Address Proof (Aadhaar Card preferred)
-                      </li>
-                      <li
-                        class="mb-card"
-                        style="
-                          list-style: disc;
-                          font-family: 'Montserrat', sans-serif;
-                          font-weight: 600;
-                        "
-                      >
-                        Proof of Bank Details
-                      </li>
-                      <li
-                        class="mb-card"
-                        style="
-                          list-style: disc;
-                          font-family: 'Montserrat', sans-serif;
-                          font-weight: 600;
-                        "
-                      >
-                        Income Proof (For derivatives & currency segment
-                      </li>
-                      <li
-                        class="mb-card"
-                        style="
-                          list-style: disc;
-                          font-family: 'Montserrat', sans-serif;
-                          font-weight: 600;
-                        "
-                      >
-                        Signature (on blank white paper)
-                      </li>
-                    </ul>
-                  </div>
-                </div>
               </li>
-              <li class="qsn-li">
-                <button
-                  style="
-                    width: 100%;
-                    background-color: #fff;
-                    font-family: 'Montserrat', sans-serif;
-                    font-weight: 600;
-                  "
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseExample2"
-                  aria-expanded="false"
-                  aria-controls="collapseExample2"
+              <li>
+                <img class="ben-img" src="images/ICONS/ben2.png" alt="" /><span
+                  >Free Market Analysis Tools</span
                 >
-                  <span class="num">02</span>
-                  <span class="qstn" style="float: left; margin-top: 10px"
-                    >How many Demat account can I open?</span
-                  >
-                  <div class="plus-icon" style="float: right">
-                    <i
-                      onclick="myFunction(this)"
-                      class="fa fa-plus"
-                      style="font-size: 40px"
-                    ></i>
-                  </div>
-                </button>
-                <div class="collapse" id="collapseExample2">
-                  <div
-                    class="card card-body mb-card"
-                    style="
-                      color: #177574;
-                      font-family: 'Montserrat', sans-serif;
-                      font-weight: 600;
-                    "
-                  >
-                    An investor can open multiple demat accounts. However, they
-                    must link their PAN number with each demat account that they
-                    have opened.
-                  </div>
-                </div>
               </li>
-              <li class="qsn-li">
-                <button
-                  style="
-                    width: 100%;
-                    background-color: #fff;
-                    font-family: 'Montserrat', sans-serif;
-                    font-weight: 600;
-                  "
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseExample3"
-                  aria-expanded="false"
-                  aria-controls="collapseExample3"
+              <li>
+                <img class="ben-img" src="images/ICONS/ben3.png" alt="" /><span
+                  >Free Webinars</span
                 >
-                  <span class="num">03</span>
-                  <span class="qstn" style="float: left; margin-top: 10px"
-                    >Can I Open Demat Account Online?</span
-                  >
-                  <div class="plus-icon" style="float: right">
-                    <i
-                      onclick="myFunction(this)"
-                      class="fa fa-plus"
-                      style="font-size: 40px"
-                    ></i>
-                  </div>
-                </button>
-                <div class="collapse" id="collapseExample3">
-                  <div
-                    class="card card-body mb-card"
-                    style="
-                      color: #177574;
-                      font-family: 'Montserrat', sans-serif;
-                      font-weight: 600;
-                    "
-                  >
-                    You can now open a Demat Account online from the comforts of
-                    your office or home.
-                  </div>
-                </div>
               </li>
-              <li class="qsn-li">
-                <button
-                  style="
-                    width: 100%;
-                    background-color: #fff;
-                    font-family: 'Montserrat', sans-serif;
-                    font-weight: 600;
-                  "
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseExample4"
-                  aria-expanded="false"
-                  aria-controls="collapseExample4"
+            </ul>
+            <ul>
+              <li>
+                <img class="ben-img" src="images/ICONS/ben4.png" alt="" /><span
+                  >Dedicated RM support</span
                 >
-                  <span class="num">04</span>
-                  <span class="qstn" style="float: left; margin-top: 10px"
-                    >Is Demat account free?</span
-                  >
-                  <div class="plus-icon" style="float: right">
-                    <i
-                      onclick="myFunction(this)"
-                      class="fa fa-plus"
-                      style="font-size: 40px"
-                    ></i>
-                  </div>
-                </button>
-                <div class="collapse" id="collapseExample4">
-                  <div
-                    class="card card-body mb-card"
-                    style="
-                      color: #177574;
-                      font-family: 'Montserrat', sans-serif;
-                      font-weight: 600;
-                    "
-                  >
-                    Yes, the Demat account opening is free of cost with a margin
-                    deposit of ₹5,000.
-                  </div>
-                </div>
               </li>
-              <li class="qsn-li">
-                <button
-                  style="
-                    width: 100%;
-                    background-color: #fff;
-                    font-family: 'Montserrat', sans-serif;
-                    font-weight: 600;
-                  "
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseExample5"
-                  aria-expanded="false"
-                  aria-controls="collapseExample5"
+              <li>
+                <img class="ben-img" src="images/ICONS/ben5.png" alt="" /><span
+                  >Zero lifetime AMC</span
                 >
-                  <span class="num">05</span>
-                  <span class="qstn" style="float: left; margin-top: 10px"
-                    >What is the minimum balance for demat account?</span
-                  >
-                  <div class="plus-icon" style="float: right">
-                    <i
-                      onclick="myFunction(this)"
-                      class="fa fa-plus"
-                      style="font-size: 40px"
-                    ></i>
-                  </div>
-                </button>
-                <div class="collapse" id="collapseExample5">
-                  <div
-                    class="card card-body mb-card"
-                    style="
-                      color: #177574;
-                      font-family: 'Montserrat', sans-serif;
-                      font-weight: 600;
-                    "
-                  >
-                    You do not need to maintain any minimum balance to keep your
-                    account active.
-                  </div>
-                </div>
               </li>
-              <li class="qsn-li">
-                <button
-                  style="
-                    width: 100%;
-                    background-color: #fff;
-                    font-family: 'Montserrat', sans-serif;
-                    font-weight: 600;
-                  "
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseExample6"
-                  aria-expanded="false"
-                  aria-controls="collapseExample6"
+              <li>
+                <img class="ben-img" src="images/ICONS/ben6.png" alt="" /><span
+                  >Upto 50k cashback</span
                 >
-                  <span class="num">06</span>
-                  <span class="qstn" style="float: left; margin-top: 10px"
-                    >What happens if I don’t use my demat account?</span
-                  >
-                  <div class="plus-icon" style="float: right">
-                    <i
-                      onclick="myFunction(this)"
-                      class="fa fa-plus"
-                      style="font-size: 40px"
-                    ></i>
-                  </div>
-                </button>
-                <div class="collapse" id="collapseExample6">
-                  <div
-                    class="card card-body mb-card"
-                    style="
-                      color: #177574;
-                      font-family: 'Montserrat', sans-serif;
-                      font-weight: 600;
-                    "
-                  >
-                    At some point of time your Demat account will be considered
-                    as a dormant Demat account (an inactive account). After that
-                    you won't be able to do any transactions from this account
-                    until you reactivate it.
-                  </div>
-                </div>
-              </li>
-              <li class="qsn-li">
-                <button
-                  style="
-                    width: 100%;
-                    background-color: #fff;
-                    font-family: 'Montserrat', sans-serif;
-                    font-weight: 600;
-                  "
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseExample7"
-                  aria-expanded="false"
-                  aria-controls="collapseExample7"
-                >
-                  <span class="num">07</span>
-                  <span class="qstn" style="float: left; margin-top: 10px"
-                    >Does a demat account expires?</span
-                  >
-                  <div class="plus-icon" style="float: right">
-                    <i
-                      onclick="myFunction(this)"
-                      class="fa fa-plus"
-                      style="font-size: 40px"
-                    ></i>
-                  </div>
-                </button>
-                <div class="collapse" id="collapseExample7">
-                  <div
-                    class="card card-body mb-card"
-                    style="
-                      color: #177574;
-                      font-family: 'Montserrat', sans-serif;
-                      font-weight: 600;
-                    "
-                  >
-                    If no transaction is done for a long period, a demat account
-                    can turn dormant.
-                  </div>
-                </div>
-              </li>
-              <li class="qsn-li">
-                <button
-                  style="
-                    width: 100%;
-                    background-color: #fff;
-                    font-family: 'Montserrat', sans-serif;
-                    font-weight: 600;
-                  "
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseExample8"
-                  aria-expanded="false"
-                  aria-controls="collapseExample8"
-                >
-                  <span class="num">08</span>
-                  <span class="qstn" style="float: left; margin-top: 10px"
-                    >Can an NRI open a demat account in india?</span
-                  >
-                  <div class="plus-icon" style="float: right">
-                    <i
-                      onclick="myFunction(this)"
-                      class="fa fa-plus"
-                      style="font-size: 40px"
-                    ></i>
-                  </div>
-                </button>
-                <div class="collapse" id="collapseExample8">
-                  <div
-                    class="card card-body mb-card"
-                    style="
-                      color: #177574;
-                      font-family: 'Montserrat', sans-serif;
-                      font-weight: 600;
-                    "
-                  >
-                    NRIs can also open a Demat account. For that they need to
-                    have either NRE or NRO bank account.
-                  </div>
-                </div>
-              </li>
-              <li class="qsn-li">
-                <button
-                  style="
-                    width: 100%;
-                    background-color: #fff;
-                    font-family: 'Montserrat', sans-serif;
-                    font-weight: 600;
-                  "
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseExample9"
-                  aria-expanded="false"
-                  aria-controls="collapseExample9"
-                >
-                  <span class="num">09</span>
-                  <span class="qstn" style="float: left; margin-top: 10px"
-                    >Can demat account be opened in joint names?</span
-                  >
-                  <div class="plus-icon" style="float: right">
-                    <i
-                      onclick="myFunction(this)"
-                      class="fa fa-plus"
-                      style="font-size: 40px"
-                    ></i>
-                  </div>
-                </button>
-                <div class="collapse" id="collapseExample9">
-                  <div
-                    class="card card-body mb-card"
-                    style="
-                      color: #177574;
-                      font-family: 'Montserrat', sans-serif;
-                      font-weight: 600;
-                    "
-                  >
-                    Yes, a Demat account can be opened in single or joint names.
-                    A maximum of 3 names can be added in the joint Demat
-                    account.
-                  </div>
-                </div>
-              </li>
-              <li class="qsn-li">
-                <button
-                  style="
-                    width: 100%;
-                    background-color: #fff;
-                    font-family: 'Montserrat', sans-serif;
-                    font-weight: 600;
-                  "
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseExample10"
-                  aria-expanded="false"
-                  aria-controls="collapseExample10"
-                >
-                  <span class="num">10</span>
-                  <span class="qstn" style="float: left; margin-top: 10px"
-                    >Is Nomination facility available in Demat Account?</span
-                  >
-                  <div class="plus-icon" style="float: right">
-                    <i
-                      onclick="myFunction(this)"
-                      class="fa fa-plus"
-                      style="font-size: 40px"
-                    ></i>
-                  </div>
-                </button>
-                <div class="collapse" id="collapseExample10">
-                  <div
-                    class="card card-body mb-card"
-                    style="
-                      color: #177574;
-                      font-family: 'Montserrat', sans-serif;
-                      font-weight: 600;
-                    "
-                  >
-                    Yes, nomination facility is available in demat account.
-                  </div>
-                </div>
               </li>
             </ul>
           </div>
         </div>
       </section>
-      <section id="awards">
-        <div class="mb-award" style="padding-bottom: 50px">
-          <div style="justify-content: center; display: flex">
-            <span
-              class="mb-head-txt mb-head-awrd"
-              style="
-                font-size: 45px;
-                font-weight: bold;
-                margin-top: 100px;
-                margin-bottom: 60px;
-                font-family: 'Montserrat', sans-serif;
-              "
-              >Awarded the Best Time and Again</span
+
+      <section id="get-started">
+        <div
+          class="heading"
+          style="
+            margin-bottom: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          "
+        >
+          <span style="margin-bottom: 10px">How to get Started?</span>
+          <h3 style="font-weight: 600">
+            Open Account in 4 easy & simple steps
+          </h3>
+        </div>
+        <div class="desk-get">
+          <ul>
+            <li>
+              <img style="margin-top: 31px;" src="images/only for desktop use/howto1.png" alt="" />
+              <div><img class="get-num" src="images/1.png" alt="" /></div>
+            </li>
+            <li>
+              <img style="margin-top: 40px;" src="images/only for desktop use/howto2.png" alt="" />
+              <div><img class="get-num" src="images/2.png" alt="" /></div>
+            </li>
+            <li>
+              <img style="margin-top: 29px;" src="images/only for desktop use/howto3.png" alt="" />
+              <div><img class="get-num" src="images/3.png" alt="" /></div>
+            </li>
+            <li>
+              <img style="margin-top: 20px;" src="images/only for desktop use/howto4.png" alt="" />
+              <div><img class="get-num" src="images/4.png" alt="" /></div>
+            </li>
+          </ul>
+          <div class="line"></div>
+        </div>
+      </section>
+
+      <section id="asked-questions">
+        <div class="heading" style="margin-bottom: 80px">
+          <span>Frequently Asked Questions</span>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                <span class="num">01</span>
+                What are the documents required to open a Demat Account?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample"
             >
+              <div class="accordion-body">
+                For Individuals, documents required include:
+                <br />
+                <br />
+                <ul>
+                  <li>PAN Card</li>
+                  <li>Address Proof (Aadhaar Card preferred)</li>
+                  <li>Proof of Bank Details</li>
+                  <li>Income Proof (For derivatives & currency segment</li>
+                  <li>Signature (on blank white paper)</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div style="text-align: center">
-            <img class="award-img" src="./images/award1.png" alt="" />
-            <img class="award-img" src="./images/award2.png" alt="" />
-            <br class="mb-view" />
-            <img class="award-img" src="./images/award3.png" alt="" />
-            <br class="desk-view" />
-            <img class="award-img" src="./images/award4.png" alt="" />
-            <br class="mb-view" />
-            <img class="award-img" src="./images/award5.png" alt="" />
-            <img class="award-img" src="./images/award6.png" alt="" />
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                <span class="num">02</span>
+                How many Demat account can I open?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                An investor can open multiple demat accounts. However, they must
+                link their PAN number with each demat account that they have
+                opened.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                <span class="num">03</span>
+                Can I Open Demat Account Online?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                You can now open a Demat Account online from the comforts of
+                your office or home.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+                aria-expanded="false"
+                aria-controls="flush-collapseFour"
+              >
+                <span class="num">04</span>
+                Is Demat account free?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingFour"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Yes, the Demat account opening is free of cost with a margin
+                deposit of ₹5,000.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive"
+                aria-expanded="false"
+                aria-controls="flush-collapseFive"
+              >
+                <span class="num">05</span>
+                What is the minimum balance for demat account?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingFive"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                You do not need to maintain any minimum balance to keep your
+                account active.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingSix">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSix"
+                aria-expanded="false"
+                aria-controls="flush-collapseSix"
+              >
+                <span class="num">06</span>
+                What happens if I don’t use my demat account?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseSix"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingSix"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                At some point of time your Demat account will be considered as a
+                dormant Demat account (an inactive account). After that you
+                won't be able to do any transactions from this account until you
+                reactivate it.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingSeven">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSeven"
+                aria-expanded="false"
+                aria-controls="flush-collapseSeven"
+              >
+                <span class="num">07</span>
+                Does a demat account expires?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseSeven"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingSeven"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                If no transaction is done for a long period, a demat account can
+                turn dormant.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingEight">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseEight"
+                aria-expanded="false"
+                aria-controls="flush-collapseEight"
+              >
+                <span class="num">08</span>
+                Can an NRI open a demat account in india?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseEight"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingEight"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                NRIs can also open a Demat account. For that they need to have
+                either NRE or NRO bank account.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingNine">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseNine"
+                aria-expanded="false"
+                aria-controls="flush-collapseNine"
+              >
+                <span class="num">09</span>
+                Can demat account be opened in joint names?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseNine"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingNine"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Yes, a Demat account can be opened in single or joint names. A
+                maximum of 3 names can be added in the joint Demat account.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTen">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTen"
+                aria-expanded="false"
+                aria-controls="flush-collapseTen"
+              >
+                <span class="num">10</span>
+                Is Nomination facility available in Demat Account?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTen"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTen"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Yes, nomination facility is available in demat account.
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
+      <section id="awards">
+        <div>
+          <div class="heading" style="margin-bottom: 50px">
+            <span>Awarded the Best Time and Again</span>
+          </div>
+          <div style="text-align: center">
+            <img class="award-img" src="./images/awrd1.png" alt="" />
+            <img class="award-img" src="./images/awrd2.png" alt="" />
+            <!-- <br class="mb-view" /> -->
+            <img class="award-img" src="./images/awrd3.png" alt="" />
+            <br class="desk-view" />
+            <img class="award-img" src="./images/awrd4.png" alt="" />
+            <!-- <br class="mb-view" /> -->
+            <img class="award-img" src="./images/awrd5.png" alt="" />
+            <img class="award-img" src="./images/awrd6.png" alt="" />
+          </div>
+        </div>
+      </section>
+
       <section id="customers">
-        <!-- Swiper -->
         <div class="swiper mySwiper">
-          <div style="justify-content: center; display: flex">
-            <span
-              class="mb-head-txt mb-custmr"
-              style="
-                font-size: 45px;
-                font-weight: bold;
-                margin-top: 50px;
-                margin-bottom: 75px;
-                font-family: 'Montserrat', sans-serif;
-              "
-              >What our customers say</span
-            >
+          <div class="heading">
+            <span>What our customers say</span>
           </div>
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div>
-                <div class="customer-review">
+              <div style="align-items: left">
+                <div class="custmr-review">
                   <p>
                     The relationship managers are not only quick but they also
                     make that extra effort to resolve all my queries properly. I
@@ -2064,40 +980,21 @@
                     me in each and every aspect of trading. Thanks SMC!
                   </p>
                 </div>
-                <div class="customer-info">
+                <div class="custmr-info">
                   <div class="custmr-img">
                     <img src="./images/customer1.jpg" alt="" />
                   </div>
-                  <div
-                    class="mb-cs-info"
-                    style="
-                      margin-left: 30px;
-                      display: flex;
-                      flex-direction: column;
-                    "
-                  >
-                    <span
-                      class="mb-cs-name"
-                      style="
-                        font-size: 35px;
-                        font-weight: bolder;
-                        font-family: Arial, Helvetica, sans-serif;
-                        margin-top: 20px;
-                      "
-                      >Nilesh Jain</span
-                    >
-                    <span
-                      class="mb-cs-city"
-                      style="font-size: 20px; font-weight: bold"
-                      >Mumbai</span
-                    >
+                  <div>
+                    <span class="custmr-name">Nilesh Jain</span>
+                    <br />
+                    <span class="custmr-city">Mumbai</span>
                   </div>
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
-              <div>
-                <div class="customer-review">
+              <div style="align-items: left">
+                <div class="custmr-review">
                   <p>
                     SMC Group is a complete solution for all finance needs &
                     goals, a supportive team which is always available for any
@@ -2107,40 +1004,21 @@
                     Thank You SMC for all the support.
                   </p>
                 </div>
-                <div class="customer-info">
+                <div class="custmr-info">
                   <div class="custmr-img">
                     <img src="./images/customer2.jpg" alt="" />
                   </div>
-                  <div
-                    class="mb-cs-info"
-                    style="
-                      margin-left: 30px;
-                      display: flex;
-                      flex-direction: column;
-                    "
-                  >
-                    <span
-                      class="mb-cs-name"
-                      style="
-                        font-size: 35px;
-                        font-weight: bolder;
-                        font-family: Arial, Helvetica, sans-serif;
-                        margin-top: 20px;
-                      "
-                      >CA Vinod Kumar Atal</span
-                    >
-                    <span
-                      class="mb-cs-city"
-                      style="font-size: 20px; font-weight: bold"
-                      >Ahemdabad</span
-                    >
+                  <div>
+                    <span class="custmr-name">CA Vinod Kumar Atal</span>
+                    <br />
+                    <span class="custmr-city">Ahemdabad</span>
                   </div>
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
-              <div>
-                <div class="customer-review">
+              <div style="align-items: left">
+                <div class="custmr-review">
                   <p>
                     SMC is one of the best brokerage service providers I have
                     been associated with. I would like to specifically mention
@@ -2149,40 +1027,21 @@
                     office functions work very smoothly.
                   </p>
                 </div>
-                <div class="customer-info">
+                <div class="custmr-info">
                   <div class="custmr-img">
                     <img src="./images/customer3.jpg" alt="" />
                   </div>
-                  <div
-                    class="mb-cs-info"
-                    style="
-                      margin-left: 30px;
-                      display: flex;
-                      flex-direction: column;
-                    "
-                  >
-                    <span
-                      class="mb-cs-name"
-                      style="
-                        font-size: 35px;
-                        font-weight: bolder;
-                        font-family: Arial, Helvetica, sans-serif;
-                        margin-top: 20px;
-                      "
-                      >Deepak Modi</span
-                    >
-                    <span
-                      class="mb-cs-city"
-                      style="font-size: 20px; font-weight: bold"
-                      >Jaipur</span
-                    >
+                  <div>
+                    <span class="custmr-name">Deepak Modi</span>
+                    <br />
+                    <span class="custmr-city">Jaipur</span>
                   </div>
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
-              <div>
-                <div class="customer-review">
+              <div style="align-items: left">
+                <div class="custmr-review">
                   <p>
                     It has been a great experience of trading and investment
                     across all segments with SMC since 2011. SMC research has
@@ -2192,40 +1051,21 @@
                     any help and guidance
                   </p>
                 </div>
-                <div class="customer-info">
+                <div class="custmr-info">
                   <div class="custmr-img">
                     <img src="./images/customer4.jpg" alt="" />
                   </div>
-                  <div
-                    class="mb-cs-info"
-                    style="
-                      margin-left: 30px;
-                      display: flex;
-                      flex-direction: column;
-                    "
-                  >
-                    <span
-                      class="mb-cs-name"
-                      style="
-                        font-size: 35px;
-                        font-weight: bolder;
-                        font-family: Arial, Helvetica, sans-serif;
-                        margin-top: 20px;
-                      "
-                      >Ketan Manubhai Dave</span
-                    >
-                    <span
-                      class="mb-cs-city"
-                      style="font-size: 20px; font-weight: bold"
-                      >Ahemdabad</span
-                    >
+                  <div>
+                    <span class="custmr-name">Ketan Manubhai Dave</span>
+                    <br />
+                    <span class="custmr-city">Ahemdabad</span>
                   </div>
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
-              <div>
-                <div class="customer-review">
+              <div style="align-items: left">
+                <div class="custmr-review">
                   <p>
                     SMC is a trusted name in the industry and they strongly
                     believe in customer relationship. Besides, their robust
@@ -2233,33 +1073,14 @@
                     Checkup and customer support are the key USPs.
                   </p>
                 </div>
-                <div class="customer-info">
+                <div class="custmr-info">
                   <div class="custmr-img">
                     <img src="./images/customer5.jpg" alt="" />
                   </div>
-                  <div
-                    class="mb-cs-info"
-                    style="
-                      margin-left: 30px;
-                      display: flex;
-                      flex-direction: column;
-                    "
-                  >
-                    <span
-                      class="mb-cs-name"
-                      style="
-                        font-size: 35px;
-                        font-weight: bolder;
-                        font-family: Arial, Helvetica, sans-serif;
-                        margin-top: 20px;
-                      "
-                      >Pankaj Jain</span
-                    >
-                    <span
-                      class="mb-cs-city"
-                      style="font-size: 20px; font-weight: bold"
-                      >Delhi</span
-                    >
+                  <div>
+                    <span class="custmr-name">Pankaj Jain</span>
+                    <br />
+                    <span class="custmr-city">Delhi</span>
                   </div>
                 </div>
               </div>
@@ -2288,27 +1109,26 @@
           <span class="stk-txt">& get ₹0 AMC for Lifetime.</span>
         </div>
         <div class="fl-con">
-          <input class="stk-inp" placeholder="Mobile Number" />
-          <input class="stk-inp" placeholder=" Email" />
+          <input
+            class="stk-inp"
+            placeholder="Mobile Number"
+            type="tel"
+            required
+          />
+          <input class="stk-inp" placeholder=" Email" type="email" required />
           <button class="stk-btn">Get started</button>
         </div>
       </div>
-
-      <div
-        class="fixed-bottom mb-acc-open"
-        style="margin: auto; margin-bottom: 10px; width: 95%"
-      >
-        <button class="mb-stk-btn" type="button">
-          Open Free Demat Account
-        </button>
-      </div>
     </div>
 
+    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
+    <!-- Bootstrap JS -->
     <script
-      type="text/javascript"
-      src="assets/js/bootstrap.bundle.min.js"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
     ></script>
 
     <!-- Initialize Swiper -->
@@ -2316,6 +1136,10 @@
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 30,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
         loop: true,
         pagination: {
           el: ".swiper-pagination",
@@ -2328,14 +1152,7 @@
       });
     </script>
 
-    <script>
-      function myFunction(x) {
-        console.log(x);
-        x.classList.toggle("fa-minus");
-        x.classList.toggle("fa-plus");
-      }
-    </script>
-
+    <!-- Floating JS -->
     <script>
       const body = document.body;
       const scrollUp = "scroll-up";
