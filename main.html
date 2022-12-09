@@ -64,6 +64,22 @@
       }
 
       /* ============================================== */
+      /*                   ANIMATION                       */
+      /* ============================================== */
+
+      @keyframes slide {
+        0% {
+          transform: translateY(150px);
+          opacity: 0;
+        }
+
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      /* ============================================== */
       /*                   SWIPER                       */
       /* ============================================== */
 
@@ -155,6 +171,7 @@
         /* display: flex; */
         padding-bottom: 75px;
         background: #fff8f2;
+        transition: 1s all ease;
       }
 
       .open-innr {
@@ -170,6 +187,7 @@
         justify-content: center;
         margin-top: 50px;
         text-align: left !important;
+        animation: slide 1s ease-in-out forwards;
       }
 
       .boxleft-innr {
@@ -231,9 +249,11 @@
       .box-right {
         width: 50%;
         margin-top: 0px !important;
+        opacity: 0;
         display: flex;
         align-items: flex-end;
         justify-content: flex-end;
+        animation: slide 1s ease-in-out 0.5s forwards;
       }
 
       .box-right img {
@@ -380,7 +400,7 @@
       }
 
       .accordion-button:not(.collapsed)::after {
-        background-image: url(images/plus.png);
+        background-image: url(images/minus.png);
         transform: var(--bs-accordion-btn-icon-transform);
         height: 45px !important;
         width: 45px !important;
@@ -392,7 +412,7 @@
         height: 45px !important;
         margin-left: auto;
         content: "";
-        background-image: url(images/minus.png);
+        background-image: url(images/plus.png);
         background-repeat: no-repeat;
         background-size: 45px !important;
         transition: var(--bs-accordion-btn-icon-transition);
@@ -446,6 +466,7 @@
       /* ============================================== */
 
       .custmr-review {
+        position: relative;
         border: 4px solid #000;
         border-radius: 30px;
         padding: 35px;
@@ -485,6 +506,30 @@
         height: 100px !important;
         width: auto !important;
         border-radius: 50px;
+      }
+
+      .quote-up,
+      .quote-dn {
+        /* height: 50px; */
+        position: absolute;
+        background: #fff;
+      }
+
+      .quote-up img,
+      .quote-dn img {
+        height: 50px;
+      }
+
+      .quote-up {
+        left: 50px;
+        top: -25px;
+        width: 100px;
+      }
+
+      .quote-dn {
+        right: 50px;
+        bottom: -25px;
+        width: 100px;
       }
 
       /* ============================================== */
@@ -895,6 +940,23 @@
           border-radius: 50px;
         }
 
+        .quote-up img,
+        .quote-dn img {
+          height: 25px;
+        }
+
+        .quote-up {
+          left: 25px;
+          top: -15px;
+          width: 50px;
+        }
+
+        .quote-dn {
+          right: 25px;
+          bottom: -15px;
+          width: 50px;
+        }
+
         /*------------------------------------------*/
         /*                 Floating                 */
         /*------------------------------------------*/
@@ -1231,6 +1293,23 @@
           height: 70px !important;
           width: auto !important;
           border-radius: 50px;
+        }
+
+        .quote-up img,
+        .quote-dn img {
+          height: 25px;
+        }
+
+        .quote-up {
+          left: 25px;
+          top: -15px;
+          width: 50px;
+        }
+
+        .quote-dn {
+          right: 25px;
+          bottom: -15px;
+          width: 50px;
         }
 
         /*------------------------------------------*/
@@ -1827,6 +1906,12 @@
                     also find the recommendations quite handy. They have helped
                     me in each and every aspect of trading. Thanks SMC!
                   </p>
+                  <div class="quote-up">
+                    <img src="images/quote-up.png" alt="" />
+                  </div>
+                  <div class="quote-dn">
+                    <img src="images/quote-dn.png" alt="" />
+                  </div>
                 </div>
                 <div class="custmr-info">
                   <div class="custmr-img">
@@ -1851,6 +1936,12 @@
                     everyone's need. I am very happy and satisfied with SMC.
                     Thank You SMC for all the support.
                   </p>
+                  <div class="quote-up">
+                    <img src="images/quote-up.png" alt="" />
+                  </div>
+                  <div class="quote-dn">
+                    <img src="images/quote-dn.png" alt="" />
+                  </div>
                 </div>
                 <div class="custmr-info">
                   <div class="custmr-img">
@@ -1874,6 +1965,12 @@
                     Trades can be executed and confirmed in no time and the back
                     office functions work very smoothly.
                   </p>
+                  <div class="quote-up">
+                    <img src="images/quote-up.png" alt="" />
+                  </div>
+                  <div class="quote-dn">
+                    <img src="images/quote-dn.png" alt="" />
+                  </div>
                 </div>
                 <div class="custmr-info">
                   <div class="custmr-img">
@@ -1898,6 +1995,12 @@
                     supportive and experienced staff has always been there for
                     any help and guidance
                   </p>
+                  <div class="quote-up">
+                    <img src="images/quote-up.png" alt="" />
+                  </div>
+                  <div class="quote-dn">
+                    <img src="images/quote-dn.png" alt="" />
+                  </div>
                 </div>
                 <div class="custmr-info">
                   <div class="custmr-img">
@@ -1920,6 +2023,12 @@
                     trading platform, simple and easy website, Portfolio Health
                     Checkup and customer support are the key USPs.
                   </p>
+                  <div class="quote-up">
+                    <img src="images/quote-up.png" alt="" />
+                  </div>
+                  <div class="quote-dn">
+                    <img src="images/quote-dn.png" alt="" />
+                  </div>
                 </div>
                 <div class="custmr-info">
                   <div class="custmr-img">
@@ -1985,10 +2094,10 @@
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 30,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
+        // autoplay: {
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // },
         loop: true,
         pagination: {
           el: ".swiper-pagination",
